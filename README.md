@@ -5,6 +5,7 @@ Esse repositório mostra alguns codigos de manipulação de banco de dados com P
 ## Descrição sobre cada file
 - Criação_Tabelas - Este script tem como o intuito de gerar tabelas dentro do seu banco de dados e definir um csv para sua tabela;
 - Leitura - A leitura serve para a leitura de qualquer tabela dentro do seu banco aonde além de estar lendo ela você pode estar trazendo ela para um dataframe para melhor manipulação de dados.
+- mysql.connector [Biblioteca](https://www.mysql.com/products/connector/)
   
 ## Funções Base
 #### - teste
