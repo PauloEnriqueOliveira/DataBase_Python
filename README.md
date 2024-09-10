@@ -8,11 +8,36 @@ Esse repositório mostra alguns codigos de manipulação de banco de dados com P
 - mysql.connector [Biblioteca](https://www.mysql.com/products/connector/)
   
 ## Funções Base
-#### - teste
+#### - Conexão DB
 ~~~
-teste
+conn = mysql.connector.connect(
+    host="endpoint",  
+    user="login", 
+    password="senha",
+    database="banco"
+)
 ~~~
-#### - teste
+#### - Criação de Cursor
 ~~~
-teste
+cursor = conn.cursor()
+~~~
+#### - Executar Query
+~~~
+cursor.execute("SELECT * FROM tabela_selecionada")
+~~~
+#### - Resultado da Query
+~~~
+result = cursor.fetchall()
+~~~
+#### - Inserção de informações na tabela
+~~~
+query = "INSERT INTO tabela (colunaX, colunaY) VALUES (%s, %s)"
+valores = ("valorX", "valorY")
+cursor.execute(query, valores)
+conn.commit()
+~~~
+#### - Fechar conexão
+~~~
+cursor.close()
+conn.close()
 ~~~
