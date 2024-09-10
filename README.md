@@ -31,13 +31,6 @@ cursor.execute("SELECT * FROM tabela_selecionada")
 ~~~
 result = cursor.fetchall()
 ~~~
-#### - Inserção de informações na tabela
-~~~
-query = "INSERT INTO tabela (colunaX, colunaY) VALUES (%s, %s)"
-valores = ("valorX", "valorY")
-cursor.execute(query, valores)
-conn.commit()
-~~~
 #### - Fechar conexão
 ~~~
 cursor.close()
