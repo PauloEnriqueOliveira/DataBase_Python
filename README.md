@@ -1,4 +1,4 @@
-# Leitura_DB
+# DataBase_Python
 
 Esse repositório mostra alguns codigos de manipulação de banco de dados com Python usando o mysql.connector. Neste repositório você pode encontrar como ler e transformar tabelas em dataframes para o python, criar tabelas dentro do banco dentre outras informações. Qualquer dúvida, sinta-se à vontade para me chamar no [linkedin](https://www.linkedin.com/in/paulo-oliveira-a6650121a/).
 
